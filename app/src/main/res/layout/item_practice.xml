@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类型"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:backgroundTint="@color/purple_100"
+            android:padding="4dp 8dp"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/tvPracticeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="练习次数：0"
+            android:textSize="14sp"
+            android:textColor="@color/gray" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="练习内容"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white" />
+
+</LinearLayout>

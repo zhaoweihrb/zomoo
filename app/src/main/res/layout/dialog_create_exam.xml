@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etExamName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="考试名称"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etNewTestPages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="新考页数"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etReviewPages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="复习页数"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="难度："
+            android:layout_marginRight="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_marginRight="8dp" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
