@@ -33,8 +33,8 @@ public class HomeFragment extends Fragment {
         btnScanPaper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 跳转到扫描页面
-                Intent intent = new Intent(getActivity(), ScanActivity.class);
+                // 跳转到考试管理页面，需要先创建考试才能扫描阅卷
+                Intent intent = new Intent(getActivity(), ExamManagementActivity.class);
                 startActivity(intent);
             }
         });

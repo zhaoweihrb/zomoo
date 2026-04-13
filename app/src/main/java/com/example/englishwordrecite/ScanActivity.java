@@ -207,6 +207,10 @@ public class ScanActivity extends AppCompatActivity {
         Word[] words = (Word[]) getIntent().getSerializableExtra("words");
         if (words != null) {
             intent.putExtra("words", words);
+        } else {
+            // 没有单词列表时的处理
+            Toast.makeText(this, "请先创建考试并选择试卷", Toast.LENGTH_SHORT).show();
+            return;
         }
         startActivity(intent);
     }

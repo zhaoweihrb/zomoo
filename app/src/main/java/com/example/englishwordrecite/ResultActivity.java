@@ -36,6 +36,10 @@ public class ResultActivity extends AppCompatActivity {
         if (recognizedText != null && words != null) {
             // 处理识别结果
             processResult(recognizedText, words);
+        } else {
+            // 没有单词列表时的处理
+            tvScore.setText("错误：没有单词列表");
+            Toast.makeText(this, "请先创建考试并选择试卷", Toast.LENGTH_SHORT).show();
         }
     }
 
