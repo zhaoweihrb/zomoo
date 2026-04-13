@@ -85,6 +85,6 @@ public class ChinesePractice implements Serializable {
 
     // 清理内容，移除标点符号和空格
     public String getCleanContent() {
-        return content.replaceAll("[\p{P}\s]", "");
+        return content.replaceAll("[\\p{P}\\s]", "");
     }
 }
