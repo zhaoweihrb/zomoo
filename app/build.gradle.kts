@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application") version "8.7.2"
-    id("org.jetbrains.kotlin.android") version "2.2.0"
+    id("com.android.application") version "8.5.0"
+    id("org.jetbrains.kotlin.android") version "2.0.20"
 }
 
 android {
@@ -27,13 +27,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_21
-        targetCompatibility = JavaVersion.VERSION_21
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
-    kotlin {
-        compilerOptions {
-            jvmTarget = "21"
-        }
+    kotlinOptions {
+        jvmTarget = "11"
     }
     buildFeatures {
         viewBinding = true
