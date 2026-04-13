@@ -71,7 +71,7 @@ public class ResultActivity extends AppCompatActivity {
             );
             params.setMargins(0, 0, 0, 16);
             resultLayout.setLayoutParams(params);
-            resultLayout.setOrientation(LinearLayout.vertical);
+            resultLayout.setOrientation(LinearLayout.VERTICAL);
 
             TextView tvChinese = new TextView(this);
             tvChinese.setText(word.getChinese());

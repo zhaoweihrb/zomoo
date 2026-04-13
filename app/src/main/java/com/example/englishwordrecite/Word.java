@@ -21,6 +21,18 @@ public class Word implements Serializable {
     public Word() {
     }
 
+    public Word(String english, String chinese) {
+        this.english = english;
+        this.chinese = chinese;
+        this.partOfSpeech = "";
+        this.phonetic = "";
+        this.difficulty = 1;
+        this.testCount = 0;
+        this.correctCount = 0;
+        this.consecutiveSuccessCount = 0;
+        this.accuracy = 0.0;
+    }
+
     public Word(String english, String chinese, String partOfSpeech, String phonetic) {
         this.english = english;
         this.chinese = chinese;

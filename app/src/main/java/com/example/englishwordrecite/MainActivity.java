@@ -31,23 +31,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
                 Fragment selectedFragment = null;
+                int itemId = item.getItemId();
 
-                switch (item.getItemId()) {
-                    case R.id.nav_home:
-                        selectedFragment = new HomeFragment();
-                        break;
-                    case R.id.nav_word_management:
-                        // 跳转到词库管理Activity
-                        WordManagementActivity.start(MainActivity.this);
-                        return true;
-                    case R.id.nav_exam_management:
-                        // 跳转到考试管理Activity
-                        ExamManagementActivity.start(MainActivity.this);
-                        return true;
-                    case R.id.nav_scan:
-                        // 跳转到扫描Activity
-                        ScanActivity.start(MainActivity.this);
-                        return true;
+                if (itemId == R.id.nav_home) {
+                    selectedFragment = new HomeFragment();
+                } else if (itemId == R.id.nav_word_management) {
+                    // 跳转到词库管理Activity
+                    WordManagementActivity.start(MainActivity.this);
+                    return true;
+                } else if (itemId == R.id.nav_exam_management) {
+                    // 跳转到考试管理Activity
+                    ExamManagementActivity.start(MainActivity.this);
+                    return true;
+                } else if (itemId == R.id.nav_scan) {
+                    // 跳转到扫描Activity
+                    ScanActivity.start(MainActivity.this);
+                    return true;
                 }
 
                 if (selectedFragment != null) {
