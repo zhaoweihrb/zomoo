@@ -21,8 +21,9 @@
             android:textSize="16sp"
             android:fontFamily="sans-serif-medium"
             android:backgroundTint="@color/purple_100"
-            android:padding="4dp 8dp"
-            android:layout_marginRight="8dp" />
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="8dp"
+            android:layout_marginEnd="8dp" />
 
         <TextView
             android:id="@+id/tvPracticeCount"
